@@ -22,6 +22,6 @@ ah_file_location = response_json["files"][0]["url"]
 puts ah_file_location
 last_modified = response_json["files"][0]["lastModified"]
 
-#ah_data = Faraday.get ah_file_location
+ah_data = Faraday.get ah_file_location
 
 #puts ah_data.body

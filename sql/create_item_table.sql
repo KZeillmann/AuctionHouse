@@ -1,0 +1,9 @@
+CREATE TABLE Items (
+	id INT PRIMARY KEY NOT NULL,
+	description VARCHAR(250), 
+	name VARCHAR(250) NOT NULL,
+	icon VARCHAR(250) NOT NULL,
+	stackable BOOLEAN NOT NULL,
+	buy_price INT NOT NULL,
+	sell_price INT NOT NULL
+);
