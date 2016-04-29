@@ -1,0 +1,6 @@
+{
+    "files": [{
+        "url": "http://auction-api-us.worldofwarcraft.com/auction-data/bee0c77ef4404efae1127c10140867a5/auctions.json",
+        "lastModified": 1461902319000
+    }]
+}
