@@ -11,11 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160411175000) do
+ActiveRecord::Schema.define(version: 20160614035855) do
+
+  create_table "auctions", force: :cascade do |t|
+    t.integer "auc_id"
+    t.integer "item"
+    t.string  "owner"
+    t.string  "owner_realm"
+    t.integer "bid"
+    t.integer "buyout"
+    t.integer "quantity"
+    t.string  "time_left"
+  end
 
   create_table "items", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "item_id"
+    t.string  "name"
+    t.string  "description"
+    t.integer "stackable"
+    t.string  "icon"
+    t.integer "buy_price"
+    t.integer "sell_price"
+    t.boolean "is_auctionable"
+    t.integer "item_level"
   end
 
 end

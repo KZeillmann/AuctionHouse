@@ -1,0 +1,10 @@
+<h1>Items#show</h1>
+<p>Find me in app/views/items/show.html.erb</p>
+<h2><%= @item.name %></h2>
+<img src="http://us.media.blizzard.com/wow/icons/56/<%= @item.icon %>.jpg"></img>
+<ul>
+  <li>Buy Price: <%= @item.buy_price %></li>
+  <li>Sell Price: <%= @item.sell_price %></li>
+  <li>Item Level: <%= @item.item_level %></li>
+</ul>
+<%= link_to "Back to search", home_index_path %>
